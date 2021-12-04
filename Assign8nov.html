@@ -1,0 +1,102 @@
+<html >
+<head>
+    
+    <title>Assignment</title>
+</head>
+<script>
+function fn(){
+    var height= document.getElementById("input1").value;
+    var radius= document.getElementById("input2").value;
+    
+   var ans1=  document.getElementById("areainput");
+   ans1.value=3.14*height*radius;
+   var ans2= document.getElementById("volumeinput");
+    ans2.value=3.14*height*radius*radius;
+}
+
+function fn1(){
+    var voltage= document.getElementById("vol1").value;
+    var current= document.getElementById("curr1").value;
+    var ans3 =document.getElementById("lastinput");
+    ans3.value=voltage*current;
+
+}
+</script>
+<style>
+    body{
+        background-color: violet;
+    }
+
+
+.div2{
+    display: inline-block;
+    margin-left: 30%;
+    margin-top: 10%;
+   
+    border: 10px solid black;
+    text-align: center;
+    background-color: coral;
+    padding: 10px;
+   
+   
+    border-radius: 20px;
+    
+}
+
+button{
+    background-color:whitesmoke;
+    
+}
+input{
+    background-color: white;
+  
+}
+.div3{
+    display: inline-block;
+    border: 10px solid black;
+    text-align: center;
+    background-color: coral;
+    padding: 10px;
+   
+   
+    border-radius: 20px;
+}
+.div3 input{
+    background-color: white;
+}
+.div3 button{
+    background-color: whitesmoke;
+}
+</style>
+<body>
+    <div class="div1">
+        <h2 style="text-align: center;">Assignment</h2>
+        <div class="div2">
+           
+            <h2> Cal the vol and surface area of  cylinder. </h2>
+            
+            <input id="input1" type="text" placeholder=" Height">
+            <input id="input2" type="text" placeholder=" Radius">
+            
+            <button onclick="fn()">answer</button>
+            
+            <h3>Surface</h3>
+            <input id="areainput" type="text" placeholder="surface Area" >
+            <h3>volume</h3>
+            <input id="volumeinput" type="text" placeholder="Volume">
+        </div>
+    
+        <div class="div3">
+           
+            <h3 > Calculate  The Power </h3>
+            <input id="vol1" type="text" placeholder="Enter voltage">
+            <input id="curr1" type="text" placeholder="Enter current">
+            
+            <button onclick="fn1()">Answer</button>
+            
+            <h3>Power</h3>
+            <input id="lastinput" type="text" >
+        </div>
+    
+</body>
+</html>
